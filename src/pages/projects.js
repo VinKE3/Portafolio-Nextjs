@@ -11,12 +11,12 @@ const FeaturedProject = ({ type, tittle, sumary, img, link, github }) => {
   return (
     <article
       className="w-full flex items-center justify-between relative rounded-3xl rounded-br-2xl border
-    border-solid border-dark bg-light shadow-2xl p-12"
+    border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light"
     >
       {/* Div para el background */}
       <div
-        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark
-      rounded-br-3xl"
+        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light
+      rounded-br-3xl "
       />
       <Link
         href={link}
@@ -26,15 +26,19 @@ const FeaturedProject = ({ type, tittle, sumary, img, link, github }) => {
         <Image src={img} alt={tittle} className="w-full h-auto" />
       </Link>
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">
-        <span className="text-primary font-medium text-lg">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-lg">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
-          className="hover:underline underline-offset-2"
+          className="hover:underline underline-offset-2 "
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold">{tittle}</h2>
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light">
+            {tittle}
+          </h2>
         </Link>
-        <p className="my-2 font-medium text-dark">{sumary}</p>
+        <p className="my-2 font-medium text-dark dark:text-light">{sumary}</p>
         <div className="mt-2 flex items-center">
           <Link href={github} target="_blank" className="w-10">
             <GithubIcon />
@@ -42,7 +46,7 @@ const FeaturedProject = ({ type, tittle, sumary, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold"
+            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark"
           >
             Visit Project
           </Link>
@@ -56,11 +60,11 @@ const Project = ({ tittle, type, img, link, github }) => {
   return (
     <article
       className="w-full flex flex-col items-center justify-center rounded-2xl border
-    border-solid border-dark bg-light p-6 relative"
+    border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light"
     >
       <div
         className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark
-      rounded-br-3xl"
+      rounded-br-3xl dark:bg-light"
       />
       <Link
         href={link}
@@ -70,7 +74,9 @@ const Project = ({ tittle, type, img, link, github }) => {
         <Image src={img} alt={tittle} className="w-full h-auto" />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-medium text-lg">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-lg">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
@@ -103,7 +109,7 @@ const projects = () => {
         <title>VinKe | Projects Page</title>
         <meta name="description" content="Projects Page" />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center">
+      <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout classname="pt-16">
           <AnimatedText
             text="La imaginación supera al conocimiento"

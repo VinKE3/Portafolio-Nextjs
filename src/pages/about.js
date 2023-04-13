@@ -45,7 +45,7 @@ const about = () => {
           <AnimatedText text="Pasión por la programación" className="mb-16" />
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="col-span-3 flex flex-col items-start justify-start">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 ">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75 ">
                 Biografia
               </h2>
               <p className="font-medium">
@@ -68,8 +68,8 @@ const about = () => {
                 your next project.
               </p>
             </div>
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark  dark:border-light">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <Image
                 src={vinke}
                 alt="vinke-profile"
