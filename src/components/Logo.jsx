@@ -28,7 +28,7 @@ const Logo = () => {
           },
         }}
       >
-        CB
+        CV
       </MotionLink>
     </div>
   );

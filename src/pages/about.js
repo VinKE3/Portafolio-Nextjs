@@ -49,23 +49,35 @@ const about = () => {
                 Biografia
               </h2>
               <p className="font-medium">
-                - Hi, Im CodeBucks, a web developer and UI/UX designer with a
-                passion for creating beautiful, functional, and user-centered
-                digital experiences. With 4 years of experience in the field. I
-                am always looking for new and innovative ways to bring my
-                clients visions to life.
+                ¡Hola! Mi nombre es Kevin, y soy un desarrollador web y
+                diseñador UI/UX apasionado por crear experiencias digitales
+                hermosas, funcionales y centradas en el usuario. Con más de 3
+                años de experiencia en este campo, me enorgullezco de estar
+                siempre en busca de formas nuevas e innovadoras para dar vida a
+                las visiones de mis clientes. Me encanta trabajar en proyectos
+                desafiantes y estoy comprometido con la excelencia en el diseño
+                y la entrega de soluciones que superen las expectativas. Si está
+                buscando un desarrollador web y diseñador UI/UX comprometido, no
+                dude en ponerse en contacto conmigo.
               </p>
               <p className="my-4 font-medium">
-                - I believe that design is about more than just making things
-                look pretty its about solving problems and creating intuitive,
-                enjoyable experiences for users.{" "}
+                En mi opinión, el diseño no se trata solo de hacer que las cosas
+                se vean atractivas visualmente. Se trata de resolver problemas y
+                crear experiencias intuitivas y agradables para los usuarios.
+                Para lograr esto, es necesario tener en cuenta aspectos como la
+                usabilidad, la accesibilidad y la interacción del usuario con el
+                producto digital. Como diseñador, me esfuerzo por crear
+                soluciones que no solo se vean bien, sino que también satisfagan
+                las necesidades y deseos de los usuarios finales.
               </p>
               <p className="font-medium">
-                - Whether Im working on a website, mobile app, or other digital
-                product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+                Cuando trabajo en un proyecto, ya sea un sitio web, una
+                aplicación móvil u otro producto digital, siempre me esfuerzo
+                por ofrecer una calidad de diseño excepcional y un enfoque
+                centrado en el usuario. Estoy ansioso por tener la oportunidad
+                de aplicar mis habilidades y mi pasión en su próximo proyecto.
+                ¡Trabajemos juntos para crear una experiencia digital que supere
+                sus expectativas!
               </p>
             </div>
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark  dark:border-light">
@@ -74,6 +86,10 @@ const about = () => {
                 src={vinke}
                 alt="vinke-profile"
                 className="w-full h-auto rounded-2xl"
+                priority
+                sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
               />
             </div>
             <div className="col-span-2 flex flex-col items-end justify-between">

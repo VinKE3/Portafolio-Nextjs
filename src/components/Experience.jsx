@@ -59,7 +59,7 @@ const Experience = () => {
             companyLink="https://www.masydase.com/"
             time="2022-Presente"
             address="Villa el Salvador, Lima, Perú"
-            work="Encargado de la parte Frontend de sistemas webs desarrollados por MasyDase, utilizando NextJS, Tailwind CSS, Framer Motion, entre otros, asi como tambien el desarrollo de paginas web desde cero o mediante Wordpress."
+            work="Soy el encargado de la parte Frontend en MasyDase, donde desarrollo sistemas web utilizando herramientas como NextJS, Tailwind CSS y Framer Motion, entre otras. Además, tengo experiencia en el desarrollo de sitios web desde cero o mediante el uso de Wordpress. Me apasiona crear interfaces de usuario atractivas, intuitivas y funcionales que brinden la mejor experiencia posible a los usuarios. Si está buscando un desarrollador Frontend comprometido y altamente capacitado, no dude en ponerse en contacto conmigo."
           />
           <Details
             position="Frontend Developer"
@@ -67,7 +67,7 @@ const Experience = () => {
             companyLink="https://www.masydase.com/"
             time="2022-Presente"
             address="Villa el Salvador, Lima, Perú"
-            work="Encargado de la parte Frontend de sistemas webs desarrollados por MasyDase, utilizando NextJS, Tailwind CSS, Framer Motion, entre otros, asi como tambien el desarrollo de paginas web desde cero o mediante Wordpress."
+            work="Soy el encargado de la parte Frontend en MasyDase, donde desarrollo sistemas web utilizando herramientas como NextJS, Tailwind CSS y Framer Motion, entre otras. Además, tengo experiencia en el desarrollo de sitios web desde cero o mediante el uso de Wordpress. Me apasiona crear interfaces de usuario atractivas, intuitivas y funcionales que brinden la mejor experiencia posible a los usuarios. Si está buscando un desarrollador Frontend comprometido y altamente capacitado, no dude en ponerse en contacto conmigo."
           />
           <Details
             position="Frontend Developer"
@@ -75,7 +75,7 @@ const Experience = () => {
             companyLink="https://www.masydase.com/"
             time="2022-Presente"
             address="Villa el Salvador, Lima, Perú"
-            work="Encargado de la parte Frontend de sistemas webs desarrollados por MasyDase, utilizando NextJS, Tailwind CSS, Framer Motion, entre otros, asi como tambien el desarrollo de paginas web desde cero o mediante Wordpress."
+            work="Soy el encargado de la parte Frontend en MasyDase, donde desarrollo sistemas web utilizando herramientas como NextJS, Tailwind CSS y Framer Motion, entre otras. Además, tengo experiencia en el desarrollo de sitios web desde cero o mediante el uso de Wordpress. Me apasiona crear interfaces de usuario atractivas, intuitivas y funcionales que brinden la mejor experiencia posible a los usuarios. Si está buscando un desarrollador Frontend comprometido y altamente capacitado, no dude en ponerse en contacto conmigo."
           />
           <Details
             position="Frontend Developer"
@@ -83,7 +83,7 @@ const Experience = () => {
             companyLink="https://www.masydase.com/"
             time="2022-Presente"
             address="Villa el Salvador, Lima, Perú"
-            work="Encargado de la parte Frontend de sistemas webs desarrollados por MasyDase, utilizando NextJS, Tailwind CSS, Framer Motion, entre otros, asi como tambien el desarrollo de paginas web desde cero o mediante Wordpress."
+            work="Soy el encargado de la parte Frontend en MasyDase, donde desarrollo sistemas web utilizando herramientas como NextJS, Tailwind CSS y Framer Motion, entre otras. Además, tengo experiencia en el desarrollo de sitios web desde cero o mediante el uso de Wordpress. Me apasiona crear interfaces de usuario atractivas, intuitivas y funcionales que brinden la mejor experiencia posible a los usuarios. Si está buscando un desarrollador Frontend comprometido y altamente capacitado, no dude en ponerse en contacto conmigo."
           />
         </ul>
       </div>

@@ -6,6 +6,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import { motion } from "framer-motion";
+
+const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, tittle, sumary, img, link, github }) => {
   return (
@@ -23,7 +26,17 @@ const FeaturedProject = ({ type, tittle, sumary, img, link, github }) => {
         target="_blank"
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={img} alt={tittle} className="w-full h-auto" />
+        <FramerImage
+          src={img}
+          alt={tittle}
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.5 }}
+          className="w-full h-auto"
+          priority
+          sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+        />
       </Link>
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">
         <span className="text-primary dark:text-primaryDark font-medium text-lg">
@@ -71,7 +84,17 @@ const Project = ({ tittle, type, img, link, github }) => {
         target="_blank"
         className="w-full cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={img} alt={tittle} className="w-full h-auto" />
+        <FramerImage
+          src={img}
+          alt={tittle}
+          className="w-full h-auto"
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.5 }}
+          priority
+          sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+        />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
         <span className="text-primary dark:text-primaryDark font-medium text-lg">
@@ -121,6 +144,17 @@ const projects = () => {
               <FeaturedProject
                 tittle="Cripto Screener App"
                 img={project1}
+                sumary="Estoy trabajando en una aplicación innovadora y fácil de usar para todos los entusiastas de las criptomonedas y del trading. La aplicación está diseñada para proporcionar una experiencia de usuario intuitiva y accesible, sin importar el nivel de experiencia con las criptomonedas. Nuestra plataforma utiliza tecnología avanzada y soluciones de seguridad sólidas para garantizar la protección de los activos y transacciones de nuestros usuarios. Si está buscando una forma segura y sencilla de invertir en criptomonedas, ¡nuestra aplicación es la elección perfecta! "
+                link="/"
+                github="/"
+                type="Featured Project"
+              />
+            </div>
+            <div className="col-span-6">
+              {" "}
+              <Project
+                tittle="Cripto Screener App"
+                img={project1}
                 sumary="aplicacion de criptos inovadora y facil de usar para todos los usuarios de criptomonedas y que les guste el trading de criptomonedas. "
                 link="/"
                 github="/"
@@ -138,10 +172,39 @@ const projects = () => {
                 type="Featured Project"
               />
             </div>
-            <div className="col-span-6">Project-1</div>
-            <div className="col-span-12">Featured Projects</div>
-            <div className="col-span-6">Project-3</div>
-            <div className="col-span-6">Project-4</div>
+            <div className="col-span-12">
+              {" "}
+              <FeaturedProject
+                tittle="Cripto Screener App"
+                img={project1}
+                sumary="Estoy trabajando en una aplicación innovadora y fácil de usar para todos los entusiastas de las criptomonedas y del trading. La aplicación está diseñada para proporcionar una experiencia de usuario intuitiva y accesible, sin importar el nivel de experiencia con las criptomonedas. Nuestra plataforma utiliza tecnología avanzada y soluciones de seguridad sólidas para garantizar la protección de los activos y transacciones de nuestros usuarios. Si está buscando una forma segura y sencilla de invertir en criptomonedas, ¡nuestra aplicación es la elección perfecta! "
+                link="/"
+                github="/"
+                type="Featured Project"
+              />
+            </div>
+            <div className="col-span-6">
+              {" "}
+              <Project
+                tittle="Cripto Screener App"
+                img={project1}
+                sumary="aplicacion de criptos inovadora y facil de usar para todos los usuarios de criptomonedas y que les guste el trading de criptomonedas. "
+                link="/"
+                github="/"
+                type="Featured Project"
+              />
+            </div>
+            <div className="col-span-6">
+              {" "}
+              <Project
+                tittle="Cripto Screener App"
+                img={project1}
+                sumary="aplicacion de criptos inovadora y facil de usar para todos los usuarios de criptomonedas y que les guste el trading de criptomonedas. "
+                link="/"
+                github="/"
+                type="Featured Project"
+              />
+            </div>
           </div>
         </Layout>
       </main>

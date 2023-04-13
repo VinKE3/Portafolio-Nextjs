@@ -55,7 +55,7 @@ const Navbar = () => {
             y: -2,
           }}
           whileTap={{ scale: 0.9 }}
-          className="w-8 mx-4"
+          className="w-6 mx-3"
         >
           <TwitterIcon />
         </motion.a>
@@ -66,7 +66,7 @@ const Navbar = () => {
             y: -2,
           }}
           whileTap={{ scale: 0.9 }}
-          className="w-8 mx-4"
+          className="w-6 mx-3"
         >
           <GithubIcon />
         </motion.a>
@@ -77,7 +77,7 @@ const Navbar = () => {
             y: -2,
           }}
           whileTap={{ scale: 0.9 }}
-          className="w-8 mx-4"
+          className="w-6 mx-3"
         >
           <LinkedInIcon />
         </motion.a>
@@ -88,7 +88,7 @@ const Navbar = () => {
             y: -2,
           }}
           whileTap={{ scale: 0.9 }}
-          className="w-8 ml-4"
+          className="w-6 ml-3 bg-light rounded-full "
         >
           <PinterestIcon />
         </motion.a>

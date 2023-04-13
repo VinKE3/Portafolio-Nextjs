@@ -23,18 +23,25 @@ export default function Home() {
                 src={profilePic}
                 alt="CodeBucks"
                 className="w-full h-auto"
+                priority
+                sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
               />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center">
               <AnimatedText
-                text="Convirtiendo la visión en realidad con código y diseño."
+                text="Transformando visiones en realidad mediante código y diseño."
                 className="!text-6xl !text-left"
               />
               <p className="my-4 text-base font-medium">
-                Como desarrollador full-stack, me dedico a convertir ideas en
-                aplicaciones web innovadoras. Explora mis últimos proyectos y
-                artículos, donde muestro mi experiencia en React.js y desarrollo
-                web.
+                Como desarrollador full-stack, me apasiona transformar ideas
+                creativas en aplicaciones web innovadoras y atractivas. En mis
+                proyectos recientes, he utilizado mi experiencia en tecnologías
+                como React.js y desarrollo web para crear soluciones escalables
+                y eficientes. Si estás buscando un desarrollador web que pueda
+                transformar tu idea en una aplicación web increíble, ¡no dudes
+                en contactarme!
               </p>
               <div className="flex items-center self-start mt-2">
                 <Link
