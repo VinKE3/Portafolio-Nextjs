@@ -5,7 +5,8 @@ import Link from "next/link";
 const HireMe = () => {
   return (
     <div
-      className="fixed left-4 bottom-4 flex items-center justify-center overflow-hidden
+      className="fixed left-4 bottom-4 
+      flex items-center justify-center overflow-hidden
     md:right-8 md:left-auto md:top-0 md:bottom-auto 
     "
     >
