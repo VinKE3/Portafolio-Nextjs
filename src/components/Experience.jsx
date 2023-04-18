@@ -7,31 +7,25 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between
-      md:-w[80%]
-      "
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
     >
       <LiIcon reference={ref} />
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
-        transition={{ duration: 1.5, type: "spring" }}
+        transition={{ duration: 0.5, type: "spring" }}
       >
         <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
-          {position}&nbsp;{" "}
+          {position}&nbsp;
           <a
             href={companyLink}
             target="_blank"
             className="text-primary dark:text-primaryDark capitalize"
           >
-            {" "}
             @{company}
           </a>
         </h3>
-        <span
-          className=" capitalize font-medium text-dark/75 dark:text-light/75
-        xs:text-sm"
-        >
+        <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
           {time} | {address}
         </span>
         <p className="font-medium w-full md:text-sm">{work}</p>
@@ -55,9 +49,7 @@ const Experience = () => {
         {/* Div para la Linea */}
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className=" absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light
-          md:w-[2px] md:left-[30px] xs:left-[20px]
-          "
+          className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top md:w-[2px] md:left-[30px] xs:left-[20px] dark:bg-primaryDark dark:shadow-3xl"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
@@ -69,28 +61,47 @@ const Experience = () => {
             work="Soy el encargado de la parte Frontend en MasyDase, donde desarrollo sistemas web utilizando herramientas como NextJS, Tailwind CSS y Framer Motion, entre otras. Además, tengo experiencia en el desarrollo de sitios web desde cero o mediante el uso de Wordpress. Me apasiona crear interfaces de usuario atractivas, intuitivas y funcionales que brinden la mejor experiencia posible a los usuarios. Si está buscando un desarrollador Frontend comprometido y altamente capacitado, no dude en ponerse en contacto conmigo."
           />
           <Details
-            position="Frontend Developer"
-            company="MasyDase"
-            companyLink="https://www.masydase.com/"
-            time="2022-Presente"
-            address="Villa el Salvador, Lima, Perú"
-            work="Soy el encargado de la parte Frontend en MasyDase, donde desarrollo sistemas web utilizando herramientas como NextJS, Tailwind CSS y Framer Motion, entre otras. Además, tengo experiencia en el desarrollo de sitios web desde cero o mediante el uso de Wordpress. Me apasiona crear interfaces de usuario atractivas, intuitivas y funcionales que brinden la mejor experiencia posible a los usuarios. Si está buscando un desarrollador Frontend comprometido y altamente capacitado, no dude en ponerse en contacto conmigo."
+            position="Intern"
+            company="Facebook"
+            companyLink="https://facebook.com"
+            time="Summer 2021"
+            address="Menlo Park, CA."
+            work="Worked on a team responsible for developing a new mobile app
+              feature that allowed users to create and share short-form video
+              content, including designing and implementing a new user interface
+              and developing the backend infrastructure to support the feature."
           />
+
           <Details
-            position="Frontend Developer"
-            company="MasyDase"
-            companyLink="https://www.masydase.com/"
-            time="2022-Presente"
-            address="Villa el Salvador, Lima, Perú"
-            work="Soy el encargado de la parte Frontend en MasyDase, donde desarrollo sistemas web utilizando herramientas como NextJS, Tailwind CSS y Framer Motion, entre otras. Además, tengo experiencia en el desarrollo de sitios web desde cero o mediante el uso de Wordpress. Me apasiona crear interfaces de usuario atractivas, intuitivas y funcionales que brinden la mejor experiencia posible a los usuarios. Si está buscando un desarrollador Frontend comprometido y altamente capacitado, no dude en ponerse en contacto conmigo."
+            position="Software Developer"
+            company="Amazon"
+            companyLink="https://amazon.com"
+            time="2020-2021"
+            address="Seattle, WA."
+            work="Worked on a team responsible for developing Amazon's mobile app, including implementing new features such as product recommendations and user reviews, and optimizing the app's performance and reliability."
           />
+
           <Details
-            position="Frontend Developer"
-            company="MasyDase"
-            companyLink="https://www.masydase.com/"
-            time="2022-Presente"
-            address="Villa el Salvador, Lima, Perú"
-            work="Soy el encargado de la parte Frontend en MasyDase, donde desarrollo sistemas web utilizando herramientas como NextJS, Tailwind CSS y Framer Motion, entre otras. Además, tengo experiencia en el desarrollo de sitios web desde cero o mediante el uso de Wordpress. Me apasiona crear interfaces de usuario atractivas, intuitivas y funcionales que brinden la mejor experiencia posible a los usuarios. Si está buscando un desarrollador Frontend comprometido y altamente capacitado, no dude en ponerse en contacto conmigo."
+            position="Software Developer Intern"
+            company="Microsoft"
+            companyLink="https://microsoft.com"
+            time="Summer 2019"
+            address="Redmond, WA."
+            work="Worked on a team responsible for developing new features for
+              Microsoft's Windows operating system, including implementing a new
+              user interface for a system settings panel and optimizing the
+              performance of a core system component."
+          />
+
+          <Details
+            position="Teaching Assistant"
+            company="MIT"
+            companyLink="https://mit.edu"
+            time="Fall 2018"
+            address="Massachusetts Ave, Cambridge, MA."
+            work="Assisted in teaching a course on computer programming, held office
+              hours to help students with assignments, and graded exams and
+              assignments."
           />
         </ul>
       </div>

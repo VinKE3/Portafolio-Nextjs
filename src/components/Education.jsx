@@ -7,13 +7,13 @@ const Details = ({ type, time, place, info }) => {
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:-w[80%]"
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
     >
       <LiIcon reference={ref} />
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
-        transition={{ duration: 1.5, type: "spring" }}
+        transition={{ duration: 0.5, type: "spring" }}
       >
         <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
           {type}
@@ -42,8 +42,8 @@ const Education = () => {
         {/* Div para la Linea */}
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className=" absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light
-          md:w-[2px] md:left-[30px] xs:left-[20px]"
+          className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light
+          md:w-[2px] md:left-[30px] xs:left-[20px] dark:shadow-3xl"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
@@ -53,22 +53,24 @@ const Education = () => {
             info="Amplio campo de acción de un Ingeniero en Sistemas de Información, su adaptación a las necesidades del mercado, su desempeño en desarrollo, el perfil gerencial, de negocios, el emprendedor, la diferencia con Informática."
           />
           <Details
-            type="Ingenieria en Sistemas"
-            time="2018-Presente"
-            place="Univerdad Tecnologica Nacional Buenos Aires"
-            info="Amplio campo de acción de un Ingeniero en Sistemas de Información, su adaptación a las necesidades del mercado, su desempeño en desarrollo, el perfil gerencial, de negocios, el emprendedor, la diferencia con Informática."
+            type="Bachelor of Science in Computer Science"
+            time="2016-2020"
+            place="Massachusetts Institute of Technology (MIT)"
+            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
           />
+
           <Details
-            type="Ingenieria en Sistemas"
-            time="2018-Presente"
-            place="Univerdad Tecnologica Nacional Buenos Aires"
-            info="Amplio campo de acción de un Ingeniero en Sistemas de Información, su adaptación a las necesidades del mercado, su desempeño en desarrollo, el perfil gerencial, de negocios, el emprendedor, la diferencia con Informática."
+            type="Master of Computer Science"
+            time="2020-2022"
+            place="Stanford University"
+            info="Completed a master's project on deep learning, developing a new neural network architecture for natural language understanding."
           />
+
           <Details
-            type="Ingenieria en Sistemas"
-            time="2018-Presente"
-            place="Univerdad Tecnologica Nacional Buenos Aires"
-            info="Amplio campo de acción de un Ingeniero en Sistemas de Información, su adaptación a las necesidades del mercado, su desempeño en desarrollo, el perfil gerencial, de negocios, el emprendedor, la diferencia con Informática."
+            type="Online Coursework"
+            time="2016-2020"
+            place="Coursera and edX"
+            info="Completed coursework in advanced topics such as Reinforcement Learning, Computer Vision, and Machine Learning Engineering."
           />
         </ul>
       </div>
