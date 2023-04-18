@@ -34,7 +34,7 @@ export default function Home() {
                 text="Transformando visiones en realidad mediante código y diseño."
                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl sm:!text-3xl"
               />
-              <p className="my-4 text-base font-medium">
+              <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
                 Como desarrollador full-stack, me apasiona transformar ideas
                 creativas en aplicaciones web innovadoras y atractivas. En mis
                 proyectos recientes, he utilizado mi experiencia en tecnologías
@@ -51,6 +51,7 @@ export default function Home() {
                   hover:bg-light hover:text-dark border-2 border-solid border-transparent 
                   hover:border-dark transition duration-300 ease-in-out
                   dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:hover:border-light
+                  md:p-2 md:px-4 md:text-base
                 "
                   download={true}
                 >
@@ -61,7 +62,7 @@ export default function Home() {
                   href="kevin.munoz0995@gmail.com"
                   target={"_blank"}
                   className="
-                ml-4 text-lg font-medium capitalize text-dark underline dark:text-light
+                ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base
                 "
                 >
                   Contacto
